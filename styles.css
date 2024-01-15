@@ -1,0 +1,404 @@
+/* styles.css */
+/* Styles for your personal website */
+
+/* Common styles */
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #03a87c;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      color: #fff;
+      margin-right: auto;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .navbar-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    .navbar-link {
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-link:hover {
+      color: #e5e5e5;
+    }
+.profile-component {
+  width: 100%;
+  height: calc(100vh - 80px); /* Adjust based on your navigation bar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-description {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-description a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.profile-news-list {
+  list-style-type: none;
+  margin-top: 50px;
+  padding: 0;
+    text-align: left;
+}
+
+.profile-news-item {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.component {
+      display: flex;
+      align-items: center;
+      background-color: #e5e5e5;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .component-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .component-content {
+      flex-grow: 1;
+    }
+
+    .component-content a {
+      color: #03a87c;
+      text-decoration: none;
+    }
+
+    .component-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .component-author {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .component-description {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px; /* Adjust the width as needed */
+}
+
+.middle-grid {
+  width: 100%; /* Adjust the width as needed */
+  background-color: #e5e5e5;
+  padding: 20px;
+}
+
+.left-grid {
+  width: 200px; /* Adjust the width as needed */
+  margin-left: 20px; /* Adjust the left margin as needed */
+  background-color: #e5e5e5;
+  padding: 20px;
+}
+
+.content {
+  /* Set some content height for illustration purposes */
+  height: 400px;
+}
+
+.bottom-line {
+  background-color: #f5f5f5;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-line-sec {
+  background-color: #f5f5f5;
+  padding: 10px;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.license-info, .last-modified {
+  margin: 0 10px;
+}
+
+/* Optional styles for license-info and last-modified */
+.license-info p, .last-modified p, .visitor-counter p {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.about-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.about-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-section ul {
+  margin-left: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+.contact-section {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+}
+
+.contact-image {
+  flex-basis: 60%; /* adjust the size as per your preference */
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-info {
+  flex-basis: 60%; /* adjust the size as per your preference */
+  padding-left: 20px;
+}
+
+.contact-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding-left: 0;
+    margin-bottom: 5px;
+}
+.contact-info li {
+  list-style-type: none;
+  padding-left: 0;
+    margin-bottom: 10px;
+}
+.calendar {
+  /* Add custom styles for the calendar area */
+}
+
+.map {
+    width: 50%;
+  /* Add custom styles for the map area */
+}
+
+/* Fancy Markdown Content Styles */
+.markdown-content {
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.markdown-content body {
+  font: -apple-system-short-body;
+}
+
+.markdown-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 40px 0;
+  color: #2a416f;
+  border-bottom: 2px solid #ccc;
+}
+
+.markdown-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #2a416f;
+}
+
+.markdown-content h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 25px 0;
+  color: #2a416f;
+}
+
+.markdown-content h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #2a416f;
+}
+
+.markdown-content h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #2a416f;
+}
+
+.markdown-content h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #2a416f;
+}
+
+.markdown-content p {
+  margin: 18px 0;
+  line-height: 1.8;
+}
+
+.markdown-content a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.markdown-content a:hover {
+  color: #0056b3;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 18px 0;
+  padding-left: 40px;
+}
+
+.markdown-content ul li,
+.markdown-content ol li {
+  margin-bottom: 8px;
+}
+
+.markdown-content blockquote {
+  margin: 0 0 18px;
+  padding: 15px;
+  color: #444;
+  background: #f5f5f5;
+  border-left: 4px solid #ccc;
+}
+
+.markdown-content code {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.markdown-content pre {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.markdown-content table th {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Additional styles can be added as needed */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Template</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../stastic/markdown.js"></script>
+</head>
+<body>
+  <div class="grid-container">
+
+    <div class="middle-grid">
+
+      <nav class="navbar">
+      <a href="#" class="navbar-brand">Sinong Wang(王思侬)</a>
+      <div class="navbar-links">
+        <a href="../index.html" class="navbar-link">Home</a>
+        <a href="../about.html" class="navbar-link">About</a>
+        <a href="../publication.html" class="navbar-link">Publications</a>
+        <a href="../project.html" class="navbar-link">Projects</a>
+        <a href="../blog.html" class="navbar-link">Blogs</a>
+        <a href="../contact.html" class="navbar-link">Contact</a>
+      </div>
+      </nav>
+
+      <div class="markdown-content" id="markdownContent"></div>
+
+    </div>
+  <div class="content">
+    <!-- Your website content goes here -->
+  </div>
+
+  <div class="bottom-line-sec">
+    <div class="last-modified">
+      <p id="last-modified"></p>
+    </div>
+    <div class="visitor-counter">
+      <p id="visitor-count"></p>
+    </div>
+  </div>
+
+  <div class="bottom-line">
+    <div class="license-info">
+      <p>&copy; 2020-2024 Sinong Wang. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('load', function() {
+      var lastModified = new Date(document.lastModified);
+      var formattedDate = lastModified.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day : 'numeric' });
+      document.getElementById('last-modified').textContent = 'Last modified: ' + formattedDate;
+    });
+    window.addEventListener('load', function() {
+      var visitorCount = localStorage.getItem('visitorCount') || 0;
+      visitorCount++;
+      localStorage.setItem('visitorCount', visitorCount);
+      document.getElementById('visitor-count').textContent = 'Visitors: ' + visitorCount;
+    });
+
+    const markdownFile = "../blogs_md/GroupMeeting-28.md";  // Path to your Markdown file
+    fetch(markdownFile)
+    .then(response => response.text())
+    .then(markdownContent => {
+      const htmlContent = markdown.toHTML(markdownContent);
+      const markdownContainer = document.getElementById("markdownContent");
+      markdownContainer.innerHTML = htmlContent;
+    })
+    .catch(error => console.error(error));
+  </script>
+
+
+
+
+  <!-- Add more instances of the component as needed -->
+
+</body>
+</html>

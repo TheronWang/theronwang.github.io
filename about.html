@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinong Wang Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  </style>
+</head>
+<body>
+
+
+
+  <div class="grid-container">
+
+    <div class="middle-grid">
+
+      <nav class="navbar">
+      <a href="index.html" class="navbar-brand">Sinong Wang(王思侬)</a>
+      <div class="navbar-links">
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="about.html" class="navbar-link">About</a>
+        <a href="publication.html" class="navbar-link">Publications</a>
+        <a href="project.html" class="navbar-link">Projects</a>
+        <a href="blog.html" class="navbar-link">Blogs</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+      </div>
+      </nav>
+
+      <div class="about-grid">
+
+        <div class="about-section">
+          <h2>Office Hour</h2>
+          <ul>
+            <li><span class="highlight">Monday 4:00-5:00 pm</span></li>
+            <li><span class="highlight">ERB 316</span></li>
+          </ul>
+        </div>
+
+        <div class="about-section">
+          <h2>Know Me</h2>
+          <ul>
+            <li><span class="highlight">Here is my <a href="stastic/Sinong_CV.pdf" target="_blank">CV</a></span></li>
+            <li><span class="highlight">So you can judge me for how long I've been a professional student and intern! &#128519; </span></li>
+          </ul>
+        </div>
+
+<!--        <div class="about-section">-->
+<!--          <h2>Education Experience</h2>-->
+<!--          <ul>-->
+<!--            <li>2023-Present &nbsp;&nbsp;<span class="highlight">Ph.D. Student University of Texas at Arlington</span></li>-->
+<!--            <li>2020-2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">MCS University of Texas at Arlington</span></li>-->
+<!--            <li>2021-2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">MSE Northeastern University in China</span></li>-->
+<!--            <li>2016-2020 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">B.Eng. Donghua University</span></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+
+        <div class="about-section">
+          <h2>My Expectation</h2>
+          <ul>
+            <li><span class="highlight">I am not satisfied with the knowledge I currently have.</span></li>
+            <li><span class="highlight"> I want to explore the frontiers of human knowledge.</span></li>
+          </ul>
+        </div>
+
+    </div>
+  </div>
+  <div class="content">
+    <!-- Your website content goes here -->
+  </div>
+
+  <div class="bottom-line-sec">
+    <div class="last-modified">
+      <p id="last-modified"></p>
+    </div>
+    <div class="visitor-counter">
+      <p id="visitor-count"></p>
+    </div>
+  </div>
+
+  <div class="bottom-line">
+    <div class="license-info">
+      <p>&copy; 2020-2024 Sinong Wang. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('load', function() {
+      var lastModified = new Date(document.lastModified);
+      var formattedDate = lastModified.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day : 'numeric' });
+      document.getElementById('last-modified').textContent = 'Last modified: ' + formattedDate;
+    });
+    window.addEventListener('load', function() {
+      var visitorCount = localStorage.getItem('visitorCount') || 0;
+      visitorCount++;
+      localStorage.setItem('visitorCount', visitorCount);
+      document.getElementById('visitor-count').textContent = 'Visitors: ' + visitorCount;
+    });
+  </script>
+
+
+
+  <!-- Rest of your website content goes here -->
+
+</body>
+</html>
