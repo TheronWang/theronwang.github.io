@@ -10,22 +10,25 @@
 </head>
 <body>
 
-
-
   <div class="grid-container">
 
     <div class="middle-grid">
 
       <nav class="navbar">
-      <a href="index.html" class="navbar-brand">Sinong Wang(王思侬)</a>
-      <div class="navbar-links">
-        <a href="index.html" class="navbar-link">Home</a>
-        <a href="about.html" class="navbar-link">About</a>
-        <a href="publication.html" class="navbar-link">Publications</a>
-        <a href="project.html" class="navbar-link">Projects</a>
-        <a href="blog.html" class="navbar-link">Blogs</a>
-        <a href="contact.html" class="navbar-link">Contact</a>
-      </div>
+        <a class="navbar-brand" href="index.html">Sinong Wang(王思侬)</a>
+        <div class="navbar-toggle">
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+        </div>
+        <div class="navbar-links">
+          <a class="navbar-link" href="index.html">Home</a>
+          <a class="navbar-link" href="about.html">About</a>
+          <a class="navbar-link" href="publication.html">Publications</a>
+          <a class="navbar-link" href="project.html">Projects</a>
+          <a class="navbar-link" href="blog.html">Blogs</a>
+          <a class="navbar-link" href="contact.html">Contact</a>
+        </div>
       </nav>
 
       <div class="about-grid">
@@ -96,6 +99,12 @@
       visitorCount++;
       localStorage.setItem('visitorCount', visitorCount);
       document.getElementById('visitor-count').textContent = 'Visitors: ' + visitorCount;
+    });
+    var navbarToggle = document.querySelector('.navbar-toggle');
+    var navbarLinks = document.querySelector('.navbar-links');
+
+    navbarToggle.addEventListener('click', function() {
+    navbarLinks.classList.toggle('active');
     });
   </script>
 
