@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Component Template</title>
+<link href="../styles.css" rel="stylesheet"/>
+<link href="../styles_code.css" rel="stylesheet">
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</link></head>
+<body>
+<div class="grid-container">
+<div class="middle-grid">
+<nav class="navbar">
+<a class="navbar-brand" href="#">Sinong Wang</a>
+<div class="navbar-links">
+<a class="navbar-link" href="../index.html">Home</a>
+<a class="navbar-link" href="../about.html">About</a>
+<a class="navbar-link" href="../publication.html">Publications</a>
+<a class="navbar-link" href="../project.html">Projects</a>
+<a class="navbar-link" href="../blog.html">Blogs</a>
+<a class="navbar-link" href="../contact.html">Contact</a>
+</div>
+</nav>
+<div class="markdown-content" id="markdownContent">
+<h1 id="svn-command">SVN Command<a class="headerlink" href="#svn-command" title="Permanent link">¶</a></h1>
+<hr/>
+<h2 id="date-02172024">date: 02/17/2024<a class="headerlink" href="#date-02172024" title="Permanent link">¶</a></h2>
+<div class="toc">
+<ul>
+<li><a href="#svn-command">SVN Command</a><ul>
+<li><a href="#date-02172024">date: 02/17/2024</a></li>
+<li><a href="#svn-introduction">SVN Introduction</a></li>
+<li><a href="#svn-installation">SVN Installation</a></li>
+<li><a href="#svn-commands">SVN Commands</a><ul>
+<li><a href="#checkout-files-to-local">Checkout Files to Local</a></li>
+<li><a href="#display-file-or-directory-status">Display file or directory status</a></li>
+<li><a href="#update-version">Update Version</a></li>
+<li><a href="#add-files">Add files</a></li>
+<li><a href="#delete-files">Delete files</a></li>
+<li><a href="#commit-changes-to-repository">Commit changes to repository</a></li>
+<li><a href="#lock-unlock">Lock &amp; Unlock</a></li>
+<li><a href="#check-log">Check log</a></li>
+<li><a href="#check-details-about-files">Check details about files</a></li>
+<li><a href="#compare-local-files-and-directory-files">Compare local files and directory files</a></li>
+<li><a href="#merge-into-current-files">Merge into current files</a></li>
+<li><a href="#other-commands">Other Commands</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="svn-introduction">SVN Introduction<a class="headerlink" href="#svn-introduction" title="Permanent link">¶</a></h2>
+<p>SVN, short for Subversion, is a version control system. Like CVS, SVN is a cross-platform software that supports most common operating systems. As an open-source version control system, Subversion manages data that changes over time. This data is stored in a central repository, which is similar to a standard file server, except that it remembers every change made to the files. This allows you to revert files back to older versions or browse the history of changes. Subversion is a versatile system that can manage any type of file, including program source code.</p>
+<h2 id="svn-installation">SVN Installation<a class="headerlink" href="#svn-installation" title="Permanent link">¶</a></h2>
+<p>Install in Linux Server</p>
+<h2 id="svn-commands">SVN Commands<a class="headerlink" href="#svn-commands" title="Permanent link">¶</a></h2>
+<h3 id="checkout-files-to-local">Checkout Files to Local<a class="headerlink" href="#checkout-files-to-local" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>checkout<span class="w"> </span><span class="o">[</span>svn_path<span class="o">]</span><span class="w"> </span><span class="o">[</span>local_path<span class="o">]</span>
+//<span class="w"> </span>For<span class="w"> </span>example:
+svn<span class="w"> </span>checkout<span class="w"> </span>svn://192.168.1.131/45dian/brand<span class="w"> </span>./brand/
+//<span class="w"> </span>Abbrivation
+svn<span class="w"> </span>co
+</code></pre></div>
+<h3 id="display-file-or-directory-status">Display file or directory status<a class="headerlink" href="#display-file-or-directory-status" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>status<span class="w"> </span>PATH
+//<span class="w"> </span>normal<span class="w"> </span>status<span class="w"> </span>will<span class="w"> </span>display<span class="w"> </span>nothing
+//<span class="w"> </span>?<span class="w"> </span>not<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>svn<span class="w"> </span>control
+//<span class="w"> </span>M<span class="w"> </span>content<span class="w"> </span>is<span class="w"> </span>modified
+//<span class="w"> </span>C<span class="w"> </span>conflict
+//<span class="w"> </span>A<span class="w"> </span>intent<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>added<span class="w"> </span>into<span class="w"> </span>repository
+//<span class="w"> </span>K<span class="w"> </span>locked
+svn<span class="w"> </span>status<span class="w"> </span>-v<span class="w"> </span>PATH
+svn<span class="w"> </span>status
+svn<span class="w"> </span>status<span class="w"> </span>-v
+svn<span class="w"> </span>st
+</code></pre></div>
+<h3 id="update-version">Update Version<a class="headerlink" href="#update-version" title="Permanent link">¶</a></h3>
+<p>Before modifying any files, you must first update the repository, then modify the files, and finally commit them. If you are prompted that the submission is outdated at the time of committing, it is due to a conflict. You need to first update, modify the files, then clear the conflict with svn resolved, and lastly commit again.</p>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>update<span class="w"> </span>-r<span class="w"> </span>m<span class="w"> </span>PATH
+//<span class="w"> </span>Update<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>latest<span class="w"> </span>version
+svn<span class="w"> </span>updata
+//<span class="w"> </span>Recover<span class="w"> </span>to<span class="w"> </span>version<span class="w"> </span><span class="m">200</span>
+svn<span class="w"> </span>-r<span class="w"> </span><span class="m">200</span><span class="w"> </span>main.py
+//<span class="w"> </span>Update<span class="w"> </span>a<span class="w"> </span>specific<span class="w"> </span>file<span class="w"> </span>to<span class="w"> </span>latest<span class="w"> </span>version
+svn<span class="w"> </span>update<span class="w"> </span>main.py
+</code></pre></div>
+<h3 id="add-files">Add files<a class="headerlink" href="#add-files" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>add<span class="w"> </span><span class="o">[</span>file<span class="o">]</span>
+//<span class="w"> </span>Add<span class="w"> </span>all<span class="w"> </span>files<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span><span class="nb">type</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>current<span class="w"> </span>directory
+svn<span class="w"> </span>add<span class="w"> </span>*.tex
+//<span class="w"> </span>Add<span class="w"> </span>a<span class="w"> </span>directory
+svn<span class="w"> </span>add<span class="w"> </span>static
+</code></pre></div>
+<h3 id="delete-files">Delete files<a class="headerlink" href="#delete-files" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>delete<span class="w"> </span>PATH<span class="w"> </span>-m<span class="w"> </span><span class="s2">"commentary"</span>
+//<span class="w"> </span>For<span class="w"> </span>example:
+svn<span class="w"> </span>delete<span class="w"> </span>test.php
+svn<span class="w"> </span>ci<span class="w"> </span>-m<span class="w"> </span><span class="s1">'commit deleting files'</span>
+//<span class="w"> </span>Abbrevation
+svn<span class="w"> </span>del,remove,rm
+</code></pre></div>
+<h3 id="commit-changes-to-repository">Commit changes to repository<a class="headerlink" href="#commit-changes-to-repository" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"commentary"</span><span class="w"> </span><span class="o">[</span>--no-unlock<span class="o">]</span><span class="w"> </span>PATH
+//<span class="w"> </span>For<span class="w"> </span>example,<span class="w"> </span>add<span class="w"> </span>file,<span class="w"> </span>add<span class="w"> </span>directory:
+svn<span class="w"> </span>ci<span class="w"> </span>-m<span class="w"> </span><span class="s2">"add new file"</span><span class="w"> </span>output.log
+svn<span class="w"> </span>ci<span class="w"> </span>-m<span class="w"> </span><span class="s2">"add new directory"</span><span class="w"> </span>static
+</code></pre></div>
+<h3 id="lock-unlock">Lock &amp; Unlock<a class="headerlink" href="#lock-unlock" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>lock<span class="w"> </span>-m<span class="w"> </span><span class="s2">"commentary"</span><span class="w"> </span><span class="o">[</span>--force<span class="o">]</span><span class="w"> </span>PATH
+//<span class="w"> </span>For<span class="w"> </span>example:
+svn<span class="w"> </span>lock<span class="w"> </span>-m<span class="w"> </span><span class="s2">"lock file"</span><span class="w"> </span>config.yaml
+//<span class="w"> </span>Unlock<span class="w"> </span>file:
+svn<span class="w"> </span>unlock<span class="w"> </span>PATH
+</code></pre></div>
+<h3 id="check-log">Check log<a class="headerlink" href="#check-log" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>log<span class="w"> </span>PATH
+//<span class="w"> </span>display<span class="w"> </span>the<span class="w"> </span>changes<span class="w"> </span><span class="nb">history</span><span class="w"> </span>and<span class="w"> </span>the<span class="w"> </span>version<span class="w"> </span>number
+//<span class="w"> </span>For<span class="w"> </span>example:
+svn<span class="w"> </span>log
+svn<span class="w"> </span>log<span class="w"> </span>main.py
+</code></pre></div>
+<h3 id="check-details-about-files">Check details about files<a class="headerlink" href="#check-details-about-files" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>info<span class="w"> </span>PATH
+svn<span class="w"> </span>info
+svn<span class="w"> </span>info<span class="w"> </span>main.py
+</code></pre></div>
+<h3 id="compare-local-files-and-directory-files">Compare local files and directory files<a class="headerlink" href="#compare-local-files-and-directory-files" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>diff<span class="w"> </span>PATH
+svn<span class="w"> </span>diff<span class="w"> </span>main.py
+//<span class="w"> </span>Compare<span class="w"> </span>between<span class="w"> </span>versions
+svn<span class="w"> </span>diff<span class="w"> </span>-r<span class="w"> </span>m:n<span class="w"> </span>PATH
+svn<span class="w"> </span>diff<span class="w"> </span>-r<span class="w"> </span><span class="m">200</span>:201<span class="w"> </span>main.py
+</code></pre></div>
+<h3 id="merge-into-current-files">Merge into current files<a class="headerlink" href="#merge-into-current-files" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span>merge<span class="w"> </span>-r<span class="w"> </span>m:n<span class="w"> </span>PATH
+svn<span class="w"> </span>merge<span class="w"> </span>-r<span class="w"> </span><span class="m">200</span>:201<span class="w"> </span>main.py
+//<span class="w"> </span>Normally,<span class="w"> </span>it<span class="w"> </span>will<span class="w"> </span>produce<span class="w"> </span>a<span class="w"> </span>conflict<span class="w"> </span>which<span class="w"> </span>we<span class="w"> </span>need<span class="w"> </span>to<span class="w"> </span>resolve
+</code></pre></div>
+<h3 id="other-commands">Other Commands<a class="headerlink" href="#other-commands" title="Permanent link">¶</a></h3>
+<div class="codehilite"><pre><span></span><code>svn<span class="w"> </span><span class="nb">help</span>
+svn<span class="w"> </span><span class="nb">help</span><span class="w"> </span>ci
+svn<span class="w"> </span>mkdir<span class="w"> </span>PATH
+mkdir<span class="w"> </span>work
+svn<span class="w"> </span>add<span class="w"> </span>work<span class="w"> </span>-m<span class="w"> </span><span class="s2">"add a new folder"</span>
+svn<span class="w"> </span>switch<span class="w"> </span><span class="o">[</span>PATH<span class="o">]</span>
+svn<span class="w"> </span>switch<span class="w"> </span>-relocate<span class="w"> </span>FROM<span class="w"> </span>TO<span class="w"> </span><span class="o">[</span>PATH..<span class="o">]</span>
+</code></pre></div></div>
+</div>
+</div>
+<div class="bottom-line-sec">
+<div class="last-modified">
+<p id="last-modified"></p>
+</div>
+<div class="visitor-counter">
+<p id="visitor-count"></p>
+</div>
+</div>
+<div class="bottom-line">
+<div class="license-info">
+<p>© 2020-2024 Sinong Wang. All rights reserved.</p>
+</div>
+</div>
+<script>
+    window.addEventListener('load', function() {
+      var lastModified = new Date(document.lastModified);
+      var formattedDate = lastModified.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day : 'numeric' });
+      document.getElementById('last-modified').textContent = 'Last modified: ' + formattedDate;
+    });
+    window.addEventListener('load', function() {
+      var visitorCount = localStorage.getItem('visitorCount') || 0;
+      visitorCount++;
+      localStorage.setItem('visitorCount', visitorCount);
+      document.getElementById('visitor-count').textContent = 'Visitors: ' + visitorCount;
+    });
+  </script>
+</body>
+</html>

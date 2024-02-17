@@ -5,8 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Component Template</title>
   <link rel="stylesheet" href="../styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
-
+  <link href="../styles_code.css" rel="stylesheet"/>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
   <div class="grid-container">
@@ -24,14 +34,7 @@
       </div>
       </nav>
       <div class="markdown-content" id="markdownContent">
-        <p>$\alpha + \beta = (\alpha + \beta).$</p>
       </div>
-      <div>
-        <p>$\alpha + \beta = (\alpha + \beta).$</p>
-      </div>
-    </div>
-    <div class="content">
-      <!-- Your website content goes here -->
     </div>
   </div>
 
@@ -62,35 +65,7 @@
       localStorage.setItem('visitorCount', visitorCount);
       document.getElementById('visitor-count').textContent = 'Visitors: ' + visitorCount;
     });
-    window.addEventListener('load', function () {
-      const markdownFile = "../blogs_md/GroupMeeting-28.md";  // Path to your Markdown file
-      fetch(markdownFile)
-      .then(response => response.text())
-      .then(markdownContent => {
-        const converter = new showdown.Converter();
-        htmlContent = converter.makeHtml(markdownContent);
-        const markdownContainer = document.getElementById("markdownContent");
-        markdownContainer.innerHTML = htmlContent;
-      })
-      .catch(error => console.error(error));
-      translate();
-    })
-    document.addEventListener('DOMContentLoaded', function() {
-      generic();
-      translate();
-    console.log("DOM fully loaded and parsed");
-    });
   </script>
-  <script type="text/javascript"
-  src="../stastic/LaTeXMathML.js">
-  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js">
-  </script>
-
-
-
-
-  <!-- Add more instances of the component as needed -->
 
 </body>
 </html>
