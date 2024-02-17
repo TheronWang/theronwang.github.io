@@ -391,6 +391,7 @@
 
 .markdown-content body {
   font: -apple-system-short-body;
+    text-align: justify;
 }
 
 .markdown-content h1 {
@@ -439,6 +440,7 @@
 .markdown-content p {
   margin: 18px 0;
   line-height: 1.8;
+    text-align: justify;
 }
 
 .markdown-content a {
