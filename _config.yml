@@ -232,6 +232,11 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - TODO.md
+  - _pages/profiles.md
+  - _pages/repositories.md
+  - _pages/teaching.md
+  - _news/longtemplate.md
 keep_files:
   - CNAME
   - .nojekyll
