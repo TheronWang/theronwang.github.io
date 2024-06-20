@@ -18,7 +18,7 @@ profile:
     <p>Arlington, Texas 76010</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 Sinong Wang is a Ph.D. student pursuing his Ph.D. degree in the [Department of Computer Science and Engineering](https://cse.uta.edu/) at [University of Texas at Arlington](https://uta.edu). He is supervised by Professor [Kenny Zhu](https://kenzhu2000.github.io), a scholar who has made outstanding contributions in the field of natural language processing and knowledge engineering and the first member of [Arlington Computational Linguistics Lab](https://acl-group.github.io) which is leaded by Professor Kenny Zhu. Sinong got his Master of Software Engineering from Northeastern University in China and Master of Science in Computer Science from University of Texas at Arlington.
