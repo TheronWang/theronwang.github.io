@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will be the TA of [CSE 5302/3302](https://https://kenzhu2000.github.io/cse3302/) in Fall 2023.
+I will be the TA of [CSE 5302/3302](https://kenzhu2000.github.io/cse3302/) in Fall 2023.

@@ -252,6 +252,7 @@ exclude:
   - _pages/repositories.md
   - _pages/teaching.md
   - _news/longtemplate.md
+  - backup/
 keep_files:
   - CNAME
   - .nojekyll
