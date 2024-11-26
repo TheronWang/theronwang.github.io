@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I join in the [ACL 2 Lab](https://acl-group.github.io).
+I join in the [ACL 2 Lab](https://uta-acl2.github.io).

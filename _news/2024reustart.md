@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will serve as a graduate mentor for the [REU Site: Animal Language Understanding and Processing](https://acl-group.github.io/reu) project.
+I will serve as a graduate mentor for the [REU Site: Animal Language Understanding and Processing](https://uta-acl2.github.io/reu) project.
