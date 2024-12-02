@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My paper "Phonetic and Lexical Discovery of Canine Vocalization" is accepted to EMNLP Findings!
+My paper ["Phonetic and Lexical Discovery of Canine Vocalization"](https://aclanthology.org/2024.findings-emnlp.816/) is accepted to EMNLP Findings!
