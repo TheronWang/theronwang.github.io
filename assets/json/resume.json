@@ -3,7 +3,7 @@
     "name": "Sinong Wang",
     "label": "PhD Student",
     "image": "",
-    "email": "sinong.wang@uta.edu",
+    "email": "theron.wang@uta.edu",
     "phone": "(681) 221-7301",
     "url": "https://theronwang.github.io/",
     "summary": "I am a PhD student in Computer Science at the University of Texas at Arlington. My research interests include machine learning, data mining, and natural language processing. I am currently working on the project of unspuervised lexicon discovery.",
@@ -16,9 +16,9 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "Theron Wang",
+        "url": "www.linkedin.com/in/sinongwong"
       }
     ]
   },
@@ -35,7 +35,7 @@
     {
       "name": "CSE department, UT Arlington, TX, USA",
       "position": "Teaching Assistant",
-      "url": "https://example.com",
+      "url": "https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse",
       "startDate": "2023-08-27",
       "endDate": "2024-07-10",
       "summary": "Designed and graded assignments and exams for the undergraduate courses.",
@@ -96,6 +96,20 @@
       "awarder": "Northestern University in China",
       "url": "https://english.neu.edu.cn/",
       "summary": "Good Good Study, Day Day Up."
+    },
+    {
+      "title": "John S. Schuchman Outstanding Doctoral Student",
+      "date": "2025-04-11",
+      "awarder": "UT Arlington",
+      "url": "https://www.linkedin.com/posts/cseuta_academicexcellence-cseproud-futureengineers-activity-7317979762675630084-Grly?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaWtgQBDLdr6jcvxFuInvitk9jncDeZTlQ",
+      "summary": "Outstanding Doctoral Student"
+    },
+    {
+      "title": "Outstanding Paper Award",
+      "date": "2025-08-01",
+      "awarder": "Association for Computational Linguistics",
+      "url": "https://aclanthology.org/2025.acl-long.451/",
+      "summary": "Outstanding Paper Award"
     }
   ],
   "certificates": [
@@ -104,28 +118,28 @@
       "date": "2020-11-22",
       "issuer": "DeepLearning.AI",
       "url": "https://coursera.org/share/93155d905cc867e848603d17dc453340",
-      "icon": "fa-solid fa-tag"
+      "icon": "fa-solid fa-graduation-cap"
     },
     {
-      "name": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+      "name": "Improving Deep Neural Networks",
       "date": "2021-05-30",
       "issuer": "DeepLearning.AI",
       "url": "https://coursera.org/share/1845267fde794ea7f110d419ad860b47",
-      "icon": "fa-solid fa-tag"
+      "icon": "fa-solid fa-graduation-cap"
     },
     {
       "name": "Convolutional Neural Networks",
       "date": "2021-09-10",
       "issuer": "DeepLearning.AI",
       "url": "https://coursera.org/share/18881f1a85f38d380f7515b2b76e598d",
-      "icon": "fa-solid fa-tag"
+      "icon": "fa-solid fa-graduation-cap"
     },
     {
       "name": "Structuring Machine Learning Projects",
       "date": "2021-06-20",
       "issuer": "DeepLearning.AI",
       "url": "https://coursera.org/share/34d0a2ae541f98f77d48f3a766224ae7",
-      "icon": "fa-solid fa-tag"
+      "icon": "fa-solid fa-graduation-cap"
     }
   ],
   "publications": [
@@ -135,6 +149,20 @@
       "releaseDate": "2024-02-25",
       "url": "https://arxiv.org/abs/2402.15985",
       "summary": "This system can highlight phoneme n-grams, present in the vocabulary, in the dog audio uploaded by users."
+    },
+    {
+      "name": "Phonetic and Lexical Discovery of Canine Vocalization",
+      "publisher": "EMNLP",
+      "releaseDate": "2024-11-01",
+      "url": "https://aclanthology.org/2024.findings-emnlp.816/",
+      "summary": "This paper presents an iterative algorithm inspired by human phonetic discovery, which is based on minimal pairs that determine phonemes by distinguishing different words in human language, and is able to produce a complete alphabet of distinct canine phoneme-like units. In addition, the algorithm produces a number of canine repeated acoustic units, which may correspond to specific environments and activities of a dog, composed exclusively of the canine phoneme-like units in the alphabet. The framework outlined in this paper is expected to function not only on canines but other animal species."
+    },
+    {
+      "name": "Toward Automatic Discovery of a Canine Phonetic Alphabet",
+      "publisher": "ACL",
+      "releaseDate": "2025-07-24",
+      "url": "https://aclanthology.org/2025.acl-long.451/",
+      "summary": "This paper presents an iterative algorithm inspired by human phonetic discovery, which is based on minimal pairs that determine phonemes by distinguishing different words in human language, and is able to produce a complete alphabet of distinct canine phoneme-like units. In addition, the algorithm produces a number of canine repeated acoustic units, which may correspond to specific environments and activities of a dog, composed exclusively of the canine phoneme-like units in the alphabet. The framework outlined in this paper is expected to function not only on canines but other animal species."
     }
   ],
   "skills": [

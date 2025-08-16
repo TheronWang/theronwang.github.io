@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Theron's Homepage # the website title (if blank, full name will be used instead)
 first_name: Theron
 middle_name: S.
 last_name: Wang
-email: sinong.wang@uta.edu
+email: theron.wang@uta.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   I just walk around and see what I can find.
 footer_text: >

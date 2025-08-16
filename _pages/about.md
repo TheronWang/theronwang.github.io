@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: <a href='https://uta.edu'>University of Texas at Arlington</a>
-          <br>sinong.wang@uta.edu<br>
+          <br>theron.wang@uta.edu<br>
           +1 (682) 221-7201
 
 profile:
