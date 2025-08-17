@@ -4,11 +4,11 @@ title: about
 permalink: /
 subtitle: <a href='https://uta.edu'>University of Texas at Arlington</a>
           <br>theron.wang@uta.edu<br>
-          +1 (682) 221-7201
+          # +1 (682) 221-7201
 
 profile:
   align: right
-  image: yellowstone.png
+  image: IMG_7578.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Ph.D. Student</p>
