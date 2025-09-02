@@ -1,0 +1,335 @@
+{% if page.photo_carousel and page.photo_carousel.enabled %}
+  <div class="photo-carousel-section">
+    <div class="horizontal-photo-gallery" id="autoScrollGallery">
+      <!-- Photos will be loaded directly into the main gallery container -->
+    </div>
+  </div>
+
+  <style>
+    .photo-carousel-section {
+      margin: 0 0 2rem 0;
+    }
+    
+    .horizontal-photo-gallery {
+      display: flex;
+      overflow: hidden;
+      gap: 0;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      height: 220px; /* Exact height for unified appearance */
+      scroll-behavior: smooth;
+    }
+    
+    .photo-item {
+      flex: 0 0 auto;
+      position: relative;
+      width: 200px;
+      height: 200px; /* Exact unified height - no variation */
+      overflow: hidden;
+      transition: all 0.3s ease;
+      opacity: 0.7;
+      transform: scale(0.9);
+      margin: 0 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .photo-item.center-photo {
+      opacity: 1;
+      transform: scale(1.1);
+      z-index: 3;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      margin: 0 10px;
+    }
+    
+    .photo-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures all images fill the exact 200x200 container */
+      transition: transform 0.3s ease;
+    }
+    
+    .photo-item:hover img {
+      transform: scale(1.05);
+    }
+    
+    .photo-item.center-photo:hover img {
+      transform: scale(1.1);
+    }
+    
+    .photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 8px 12px;
+      font-size: 0.85rem;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      border-radius: 0 0 8px 8px;
+    }
+    
+    .photo-item:hover .photo-caption {
+      transform: translateY(0);
+    }
+    
+    .photo-caption p {
+      margin: 0;
+      text-align: center;
+      font-weight: 500;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .photo-item {
+        width: 150px;
+        height: 150px; /* Unified mobile height */
+        margin: 0 8px;
+      }
+      
+      .horizontal-photo-gallery {
+        height: 170px; /* Exact mobile height */
+      }
+      
+      .photo-caption {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const gallery = document.getElementById('autoScrollGallery');
+      if (gallery) {
+        let scrollPosition = 0;
+        const photoWidth = 200; // Exact photo width
+        const photoMargin = 20; // Total margin (10px on each side)
+        const scrollStep = photoWidth + photoMargin; // Exactly 220px
+        const scrollInterval = 3000; // Switch every 3 seconds
+        let photoItems = [];
+        let isScrolling = false;
+        
+        // Function to load all images from the gallery folder
+        async function loadGalleryImages() {
+          try {
+            const galleryUrl = '/assets/img/gallery/';
+            let loadedImages = [];
+            
+            // List of images we know exist in the gallery folder
+            const galleryImages = [
+              'valuoga.jpg',
+              'IMG_4351.JPG',
+              'a74642e34ee6bc166977e4ea.jpg',
+              'IMG_8449.JPG',
+              'IMG_8445.JPG',
+              '3edcab99117a13292d1d57a5292cd797.JPG',
+              'IMG_7928.JPG',
+              '77b90e748cecd8324fd1c4d2599a913a.JPG',
+              'Theron-emnlp-2024-1.JPG',
+              'IMG_8808.jpg'
+            ];
+            
+            console.log('Starting to load', galleryImages.length, 'images...');
+            
+            // Load each image from the gallery folder
+            for (let i = 0; i < galleryImages.length; i++) {
+              const imgName = galleryImages[i];
+              const img = new Image();
+              
+              img.onload = function() {
+                console.log('Image loaded successfully:', imgName);
+                
+                // Image loaded successfully, add it to the gallery
+                const caption = imgName.replace(/\.[^/.]+$/, '').replace(/_/g, ' ').replace(/-/g, ' ');
+                const photoItem = createPhotoItem(this.src, caption);
+                
+                // Append directly to the main gallery container
+                gallery.appendChild(photoItem);
+                loadedImages.push(photoItem);
+                
+                // Update photoItems array
+                photoItems = loadedImages;
+                
+                console.log('Photo item added. Total photos:', photoItems.length);
+                
+                // If this is the last image, initialize the gallery
+                if (loadedImages.length === galleryImages.length) {
+                  console.log('All images loaded, initializing gallery...');
+                  initializeGallery();
+                }
+              };
+              
+              img.onerror = function() {
+                console.log('Failed to load image:', imgName);
+              };
+              
+              img.src = galleryUrl + imgName;
+            }
+            
+            // If no images loaded after timeout, show a message
+            setTimeout(() => {
+              if (loadedImages.length === 0) {
+                gallery.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">No images found in gallery folder. Please add images to /assets/img/gallery/</p>';
+              }
+            }, 5000);
+            
+          } catch (error) {
+            console.error('Error loading gallery images:', error);
+          }
+        }
+        
+        // Function to create a photo item with exact dimensions
+        function createPhotoItem(src, caption) {
+          const photoItem = document.createElement('div');
+          photoItem.className = 'photo-item';
+          
+          const img = document.createElement('img');
+          img.src = src;
+          img.className = 'img-fluid';
+          img.alt = caption;
+          img.title = caption;
+          
+          // Ensure exact dimensions
+          photoItem.style.width = '200px';
+          photoItem.style.height = '200px';
+          
+          photoItem.appendChild(img);
+          
+          if (caption) {
+            const captionDiv = document.createElement('div');
+            captionDiv.className = 'photo-caption';
+            captionDiv.innerHTML = '<p>' + caption + '</p>';
+            photoItem.appendChild(captionDiv);
+          }
+          
+          return photoItem;
+        }
+        
+        // Function to initialize the gallery functionality
+        function initializeGallery() {
+          if (photoItems.length === 0) {
+            console.log('No photos to initialize');
+            return;
+          }
+          
+          console.log('Initializing gallery with', photoItems.length, 'photos');
+          
+          // Create endless loop by duplicating photos once
+          const originalPhotos = Array.from(photoItems);
+          
+          // Add one set of duplicates for seamless loop
+          originalPhotos.forEach(photo => {
+            const clonedPhoto = photo.cloneNode(true);
+            gallery.appendChild(clonedPhoto);
+          });
+          
+          // Update photoItems to include both original and cloned
+          photoItems = gallery.querySelectorAll('.photo-item');
+          
+          console.log('Gallery initialized with', photoItems.length, 'total photos (including duplicates)');
+          
+          // Initialize center photo
+          updateCenterPhoto();
+          
+          // Start automatic scrolling
+          let scrollTimer = setInterval(autoScroll, scrollInterval);
+          
+          // Pause scrolling when user hovers over gallery
+          gallery.addEventListener('mouseenter', function() {
+            clearInterval(scrollTimer);
+            isScrolling = false;
+          });
+          
+          // Resume scrolling when user leaves gallery
+          gallery.addEventListener('mouseleave', function() {
+            if (!isScrolling) {
+              scrollTimer = setInterval(autoScroll, scrollInterval);
+            }
+          });
+          
+          // Update center photo on manual scroll
+          gallery.addEventListener('scroll', function() {
+            scrollPosition = gallery.scrollLeft;
+            updateCenterPhoto();
+          });
+          
+          // Update center photo more frequently for accuracy
+          setInterval(updateCenterPhoto, 50);
+        }
+        
+        // Function to update which photo is in the center of the visible window
+        function updateCenterPhoto() {
+          if (photoItems.length === 0) return;
+          
+          // Remove center class from all photos
+          photoItems.forEach(item => item.classList.remove('center-photo'));
+          
+          // Calculate the center of the visible window
+          const scrollLeft = gallery.scrollLeft;
+          const windowCenter = gallery.clientWidth / 2;
+          
+          // Find the photo that is closest to the center of the visible window
+          let centerPhoto = null;
+          let minDistance = Infinity;
+          
+          photoItems.forEach((item) => {
+            const itemLeft = item.offsetLeft;
+            const itemCenter = itemLeft + (item.offsetWidth / 2);
+            const distance = Math.abs(itemCenter - scrollLeft - windowCenter);
+            
+            if (distance < minDistance) {
+              minDistance = distance;
+              centerPhoto = item;
+            }
+          });
+          
+          // Add center class to the photo closest to the window center
+          if (centerPhoto) {
+            centerPhoto.classList.add('center-photo');
+          }
+        }
+        
+        // Function for automatic scrolling with perfect alignment
+        function autoScroll() {
+          if (isScrolling) return;
+          
+          isScrolling = true;
+          
+          // Move to the next photo with exact step
+          scrollPosition += scrollStep;
+          
+          // Check if we've reached the end and need to loop
+          const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+          
+          if (scrollPosition >= maxScroll) {
+            // Reset to beginning for seamless loop
+            scrollPosition = 0;
+          }
+          
+          // Smooth scroll to the new position
+          gallery.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+          });
+          
+          // Update center photo highlighting after scroll completes
+          setTimeout(() => {
+            updateCenterPhoto();
+            isScrolling = false;
+          }, 400);
+        }
+        
+        // Start loading images
+        console.log('Starting gallery initialization...');
+        loadGalleryImages();
+      }
+    });
+  </script>
+{% endif %}
