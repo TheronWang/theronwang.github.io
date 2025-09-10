@@ -134,7 +134,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Cosmic Ashes # blog_name will be displayed in your blog page
-blog_description: I am a bunch of cosmic dust, wandering in the universe and seeing what I can find.
+blog_description: I am just a bunch of cosmic dust, wandering in the universe and seeing what I can find.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

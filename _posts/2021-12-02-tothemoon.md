@@ -7,6 +7,30 @@ tags: game
 categories: feeling
 ---
 
+
+**Contains major spoilers. If you mind, please stop reading**
+
+**A Story of Love That Outlives Memory**
+
+I would rather call this a story than a game. What shook me most was that moment when River appeared again in the reset world of Johnny — the picture of a lover living forever in the consciousness of the one she loved.
+
+I realized this truth one quiet morning, grinding coffee beans. I had been wrong. It is precisely because this is a game — with images, sound, exploration, and puzzles — that I was able to feel such deep immersion, to experience the story with such intensity. The 16-bit visuals and sounds gave me limitless space for imagination, amplifying the resonance of the spirit and softening the absence of sensory detail.
+
+I will not linger on how well the game is made, nor on its myriad details. What I want to share is simply my own trembling heart. Unlike a friend of mine who drifts freely with her inner tides, immersed in every rise and fall, I have the habit of stepping back, “spoiling the moment” by asking myself: why the rise? why the fall? Secretly, I envy her.
+
+The first time I cried? It was when Johnny pulled out the platypus doll. That strange little toy surfaced again and again in Johnny’s memories. Always, unfailingly, it was by River’s side — in school, at the movies, on dates, through their marriage, in sickness, and even in her final days. It was the very first gift Johnny gave her as a child, though Johnny himself had long forgotten. The first half of the story taught us that this doll was River’s most precious companion. In that moment we understood: her most precious companion was in fact her very first encounter with Johnny.
+
+The second time I cried? Surely it was the same for everyone — when River appeared once more at NASA. The company’s duty was to alter memories so clients could die happily. They discovered that because Johnny had once met River, no matter how they implanted the desire to go to the moon, he would never pursue it. To fulfill the contract, Dr. Eva removed River from Johnny’s memories before he ever met her. Things unfolded as the scientists predicted: Johnny entered NASA and became an astronaut. But when he toured NASA, River appeared again — she too was there to be an astronaut. All of this was built from Johnny’s imagination. Even though he had never confessed to River at school, even though the timeline had fractured, in Johnny’s subconscious their meeting was destiny. At that moment we understood Dr. Eva’s words: “Trust him.” Trust that in Johnny’s heart, River was the most important person in his life — the one he would meet and stay with, no matter how the world rewrote itself.
+
+That, to me, is the beating heart of this story. At the very end, in Johnny’s imagined tale, he and River hold hands on a spaceship as his real-world heartbeat fades to zero. He completes his greatest wish. In reality they had endured so much unhappiness — Johnny’s erased childhood, River’s autism spectrum struggles, the misunderstandings and anxieties of their lives. Yet none of it left a fatal scar. They believed in each other. They believed that love endured, even without memory. Even if Johnny forgot the promise they made under the stars as children, on his deathbed he still longed to go to the moon — to see her again. Even if he could not remember, River, in her own fragile and “unusual” way, tried again and again to awaken the most beautiful memory of them together. Even if she never succeeded.
+
+So what is love, this time?
+It is the unshakable belief in the other’s love.
+
+A lover will forever live as a lover in the other’s consciousness… until the end of time.
+
+---
+
 **内含严重剧透，介意者请停止阅读。**
 
 **To the Moon**
