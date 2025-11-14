@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Sinong Wang",
-    "label": "PhD Student",
+    "label": "PhD Candidate",
     "image": "",
     "email": "theron.wang@uta.edu",
     "phone": "(681) 221-7301",
     "url": "https://theronwang.github.io/",
-    "summary": "I am a PhD student in Computer Science at the University of Texas at Arlington. My research interests include machine learning, data mining, and natural language processing. I am currently working on the project of unspuervised lexicon discovery.",
+    "summary": "I am a PhD candidate in Computer Science at the University of Texas at Arlington. My research interests include machine learning, data mining, and natural language processing. I am currently working on the project of unspuervised lexicon discovery.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "TX 76010",
