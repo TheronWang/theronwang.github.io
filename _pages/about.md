@@ -11,7 +11,7 @@ profile:
   image: IMG_7578.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Ph.D. Student</p>
+    <p>Ph.D. Candidate</p>
     <p>Department of CSE, UTA</p>
     <p>316 ERB, 500 UTA Blvd.</p>
     <p>Arlington, Texas 76010</p>
@@ -23,7 +23,7 @@ photo_carousel:
 social: true # includes social icons at the bottom of the page
 ---
 
-Theron Wang is a Ph.D. student pursuing his Ph.D. degree in the [Department of Computer Science and Engineering](https://cse.uta.edu/) at [University of Texas at Arlington](https://uta.edu). He is supervised by Professor [Kenny Zhu](https://kenzhu2000.github.io), a scholar who has made outstanding contributions in the field of natural language processing and knowledge engineering and the first member of [Arlington Computational Linguistics Lab](https://uta-acl2.github.io) which is leaded by Professor Kenny Zhu. Theron got his Master of Software Engineering from [Northeastern University](https://english.neu.edu.cn/) in China and Master of Science in Computer Science from [University of Texas at Arlington](https://uta.edu).
+Theron Wang is a Ph.D. candidate pursuing his Ph.D. degree in the [Department of Computer Science and Engineering](https://cse.uta.edu/) at [University of Texas at Arlington](https://uta.edu). He is supervised by Professor [Kenny Zhu](https://kenzhu2000.github.io), a scholar who has made outstanding contributions in the field of natural language processing and knowledge engineering and the first member of [Arlington Computational Linguistics Lab](https://uta-acl2.github.io) which is leaded by Professor Kenny Zhu. Theron got his Master of Software Engineering from [Northeastern University](https://english.neu.edu.cn/) in China and Master of Science in Computer Science from [University of Texas at Arlington](https://uta.edu).
 
 Theron is currently working on Animal Language Understanding and Processing and a graduate mentor for [NSF REU Site: AniVoice](https://uta-acl2.github.io/reu). And also he is a Graduate Research Assistant affiliated with the CSE Web Master Group of UT Arlington and is responsible for the maintenance and development of CSE department's internal applications.
 
