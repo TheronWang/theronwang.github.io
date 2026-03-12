@@ -181,7 +181,7 @@ disqus_shortname: Theron # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 newsletter:
-  enabled: false
+  enabled: true
   endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
   # https://loops.so/docs/forms/custom-form
 
@@ -402,7 +402,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: false # enables responsive images for your site (not supported on GitHub Pages)
+  enabled: true # enables responsive images for your site (not supported on GitHub Pages)
   widths:
     - 480
     - 800
