@@ -2,102 +2,80 @@
   type: map
   contents:
     - name: Full Name
-      value: Sinong Wang
-    - name: Date of Birth
-      value: January 1, 1990
+      value: Theron (Sinong) Wang
+    - name: Pronouns
+      value: He/Him/His
     - name: Languages
-      value: English, Mandarin
+      value: English (fluent), Mandarin (native)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Texas at Arlington, TX, United States
-      year: 2025
+    - title: Ph.D. in Computer Science
+      institution: University of Texas at Arlington, Arlington, TX
+      year: 2023 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Master of Science in Computer Science
-      institution: University of Texas at Arlington, TX, United States
-      year: 2023
+        - "GPA: 4.0/4.0"
+        - John S. Schuchman Outstanding Doctoral Student
+    - title: M.S. in Software Engineering
+      institution: Northeastern University, Shenyang, China
+      year: 2020 – 2023
       description:
-        - Description 1.
-        - Description 2.
-    - title: Bachelor of Engineering in Software Engineering
-      institution: Northeastern University, , China
-      year: 2021
+        - "GPA: 3.25/4.0, Rank: 37/126"
+        - "First Class Fellowship (×2); Second Class Fellowship (×1)"
+    - title: M.S. in Computer Science
+      institution: University of Texas at Arlington, Arlington, TX
+      year: 2021 – 2023
       description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 4.0/4.0, Rank: 1/37"
+    - title: B.E. in Nonwovens Engineering
+      institution: Donghua University, Shanghai, China
+      year: 2016 – 2020
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: CSE Web Developer (Graduate Research Assistant)
+      institution: University of Texas at Arlington, Dept. of Computer Science & Engineering, Arlington, TX
+      year: Fall 2024 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Maintain an internal app primarily used by CSE faculty, staff, and students.
+        - Submit CSE website change requests to College of Engineering supervisors.
+    - title: Graduate Teaching Assistant
+      institution: University of Texas at Arlington, Dept. of Computer Science & Engineering, Arlington, TX
+      year: Fall 2023 – Spring 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - "Courses: Natural Language Processing (CSE 5302/3302); Programming Language Concepts (CSE 4392)"
+        - Prepared tutorials; graded assignments, quizzes, and exams; answered student questions.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - ACL 2025 Outstanding Paper Award
+    - year: 2023 – Present
       items:
-        - Max Planck Medal
+        - John S. Schuchman Outstanding Doctoral Student, University of Texas at Arlington
+    - year: 2020 – 2023
+      items:
+        - "First Class Fellowship (×2), Northeastern University"
+        - "Second Class Fellowship (×1), Northeastern University"
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python, JavaScript, MySQL, C/C++
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
+        - English (fluent)
+        - Mandarin (native)
 
-- title: Other Interests
+- title: Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Stage drama
+    - Cooking
+    - Video games
