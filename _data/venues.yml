@@ -1,9 +1,19 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"ACL":
+  url: https://aclanthology.org/
+  color: "#2c6fad"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"EMNLP":
+  url: https://aclanthology.org/
+  color: "#2c6fad"
 
-"Vision":
-  color: "#009f36"
+"ICASSP":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1000002/all-proceedings
+  color: "#00629b"
+
+"ACM MM":
+  url: https://dl.acm.org/conference/mm
+  color: "#0085ca"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"

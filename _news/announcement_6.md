@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I start working on Aniaml Lanuage Understanding and Processing
+I start working on Animal Language Understanding and Processing
