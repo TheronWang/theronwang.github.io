@@ -4,3 +4,7 @@
 ^https?://(www\.)?reddit\.com/?
 ^https?://(www\.)?intmath\.com/
 ^https?://stackoverflow\.com/
+# Work in browsers but fail from GitHub's CI runners
+^https?://cse\.uta\.edu/
+^https?://uta\.engineering/
+^https?://unsplash\.com/
