@@ -17,3 +17,7 @@
 "arXiv":
   url: https://arxiv.org/
   color: "#b31b1b"
+
+"CSUR":
+  url: https://dl.acm.org/journal/csur
+  color: "#0085ca"
