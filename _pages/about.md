@@ -2,9 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://uta.edu'>University of Texas at Arlington</a>
-          <br>theron.wang@uta.edu<br>
-          # +1 (682) 221-7201
+subtitle:
+  <a href='https://uta.edu'>University of Texas at Arlington</a>
+  <br>theron.wang@uta.edu<br>
+  # +1 (682) 221-7201
 
 profile:
   align: right
@@ -27,7 +28,7 @@ Theron Wang is a Ph.D. candidate pursuing his Ph.D. degree in the [Department of
 
 Theron is currently working on Animal Language Understanding and Processing and a graduate mentor for [NSF REU Site: AniVoice](https://uta-acl2.github.io/reu). And also he is a Graduate Research Assistant affiliated with the CSE Web Master Group of UT Arlington and is responsible for the maintenance and development of CSE department's internal applications.
 
-Theron loves cooking and stage drama. He played the lead roles in *Volodya* in [***Dear Yelena Sergeyevna***](https://en.wikipedia.org/wiki/Dear_Yelena_Sergeyevna) and *Sydney* in [***Deathtrap***](https://en.wikipedia.org/wiki/Deathtrap_(play)) as an undergraduate and graduate student respectively.
+Theron loves cooking and stage drama. He played the lead roles in _Volodya_ in [**_Dear Yelena Sergeyevna_**](https://en.wikipedia.org/wiki/Dear_Yelena_Sergeyevna) and _Sydney_ in [**_Deathtrap_**](<https://en.wikipedia.org/wiki/Deathtrap_(play)>) as an undergraduate and graduate student respectively.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

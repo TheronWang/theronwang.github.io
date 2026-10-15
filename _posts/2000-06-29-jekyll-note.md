@@ -6,54 +6,64 @@ description: usage of jekyll post format
 tags: tutorial
 categories: sample-posts
 ---
+
 ## Second Title
+
 ### Third Title
+
 #### Forth Title
+
 ##### Five
+
 ###### Six
 
 ### Meta Data
 
 #### categories & tags
+
 - math
 - computer science
 
 #### redirect
-+ /assets/pdf/example_pdf.pdf
+
+- /assets/pdf/example_pdf.pdf
 
 #### table of contents
+
 - toc:
-    - beginning: true
-    - sidebar: left
+  - beginning: true
+  - sidebar: left
 
 <hr>
 
 ### Content
+
 #### Hipster list
+
 - first level
-    - sub level
+  - sub level
 - second level
 
 #### Check list
+
 - [ ] empty
 - [x] finish
 
 #### quote
+
 > This is a quote
 
 #### Images
+
 ```html
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        % include figure.liquid loading="eager" path="assets/img/9.jpg" class="img-fluid rounded z-depth-1" "%}"
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        % include figure.liquid loading="eager" path="assets/img/7.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
+  <div class="col-sm mt-3 mt-md-0">% include figure.liquid loading="eager" path="assets/img/9.jpg" class="img-fluid rounded z-depth-1" "%}"</div>
+  <div class="col-sm mt-3 mt-md-0">% include figure.liquid loading="eager" path="assets/img/7.jpg" class="img-fluid rounded z-depth-1" %}</div>
 </div>
 ```
 
 #### Math
+
 This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine. You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`. If you leave it inside a paragraph, it will produce an inline expression, just like $$ E = mc^2 $$.
 
 To use display mode, again surround your expression with `$$` and place it as a separate paragraph. Here is an example:
@@ -67,7 +77,7 @@ MathJax will automatically number equations:
 
 \begin{equation}
 \label{eq:cauchy-schwarz}
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\left( \sum*{k=1}^n a_k b_k \right)^2 \leq \left( \sum*{k=1}^n a*k^2 \right) \left( \sum*{k=1}^n b_k^2 \right)
 \end{equation}
 
 and by adding `\label{...}` inside the equation environment, we can now refer to the equation using `\eqref`.

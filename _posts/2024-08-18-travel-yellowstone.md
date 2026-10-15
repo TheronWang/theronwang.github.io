@@ -12,4 +12,3 @@ and Yellowstone National Park was absolutely stunning!
 A big thanks to Zander for organizing this trip and making it such a wonderful experience.
 
 We spent 2 and a half days in the Yellow Stone and another two and a half day in Great Denton.
-

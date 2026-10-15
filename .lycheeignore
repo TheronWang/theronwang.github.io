@@ -1,0 +1,6 @@
+# Sites that block automated link checkers (return 403 to bots but work in browsers)
+^https?://dl\.acm\.org/
+^https?://doi\.org/10\.1145/
+^https?://(www\.)?reddit\.com/?
+^https?://(www\.)?intmath\.com/
+^https?://stackoverflow\.com/

@@ -9,12 +9,14 @@ Personal academic website for Theron S. Wang (Ph.D. candidate at UT Arlington, N
 ## Local Development
 
 **With Docker (recommended):**
+
 ```bash
 docker-compose up
 # Site available at http://localhost:8080
 ```
 
 **With native Ruby:**
+
 ```bash
 bundle install
 bundle exec jekyll serve
@@ -34,21 +36,22 @@ Prettier is configured in `.prettierrc` with `printWidth: 150` and the Shopify L
 
 ## Content Architecture
 
-| What | Where |
-|------|-------|
-| Site-wide settings, nav, features | `_config.yml` |
-| About page bio & profile | `_pages/about.md` |
-| Publications | `_bibliography/papers.bib` (BibTeX) |
-| News items | `_news/*.md` |
-| Blog posts | `_posts/YYYY-MM-DD-title.md` |
-| CV data | `_data/cv.yml` |
-| Co-author links | `_data/coauthors.yml` |
-| Venue abbreviation colors/URLs | `_data/venues.yml` |
-| Projects | `_projects/*.md` |
+| What                              | Where                               |
+| --------------------------------- | ----------------------------------- |
+| Site-wide settings, nav, features | `_config.yml`                       |
+| About page bio & profile          | `_pages/about.md`                   |
+| Publications                      | `_bibliography/papers.bib` (BibTeX) |
+| News items                        | `_news/*.md`                        |
+| Blog posts                        | `_posts/YYYY-MM-DD-title.md`        |
+| CV data                           | `_data/cv.yml`                      |
+| Co-author links                   | `_data/coauthors.yml`               |
+| Venue abbreviation colors/URLs    | `_data/venues.yml`                  |
+| Projects                          | `_projects/*.md`                    |
 
 ### Adding a news item
 
 Create `_news/YYYYEVENTNAME.md` with this frontmatter:
+
 ```yaml
 ---
 layout: post
@@ -61,6 +64,7 @@ related_posts: false
 ### Adding a publication
 
 Add a BibTeX entry to `_bibliography/papers.bib`. Extra al-folio fields:
+
 - `abbr` — venue abbreviation badge (must be defined in `_data/venues.yml` for colored badge)
 - `selected = true` — shows on the about page under "Selected Publications"
 - `preview` — thumbnail image filename from `assets/img/`

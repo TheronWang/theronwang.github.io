@@ -182,11 +182,7 @@
       "name": "Cooking",
       "level": "Chief",
       "icon": "fa-solid fa-utensils",
-      "keywords": [
-        "Chinese Cuisine",
-        "Baking",
-        "Desserts"
-      ]
+      "keywords": ["Chinese Cuisine", "Baking", "Desserts"]
     }
   ],
   "languages": [
@@ -205,20 +201,12 @@
     {
       "name": "Drama",
       "icon": "fa-solid fa-theater-masks",
-      "keywords": [
-        "Stage Performance"
-      ]
+      "keywords": ["Stage Performance"]
     },
     {
       "name": "Video Games",
       "icon": "fa-solid fa-gamepad",
-      "keywords": [
-        "Hades",
-        "Slay the Spire",
-        "The Legend of Zelda",
-        "Civilization VI",
-        "The Elder Scrolls V: Skyrim"
-      ]
+      "keywords": ["Hades", "Slay the Spire", "The Legend of Zelda", "Civilization VI", "The Elder Scrolls V: Skyrim"]
     }
   ],
   "references": [

@@ -7,7 +7,6 @@ tags: game
 categories: feeling
 ---
 
-
 **Contains major spoilers. If you mind, please stop reading**
 
 **A Story of Love That Outlives Memory**
