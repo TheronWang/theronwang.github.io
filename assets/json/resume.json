@@ -144,25 +144,67 @@
   ],
   "publications": [
     {
-      "name": "Phonetic and Lexical Discovery of a Canine Language using HuBERT",
+      "name": "Audio-Visual Dog Identification and Tracking in Real-World Videos",
       "publisher": "Arxiv",
-      "releaseDate": "2024-02-25",
-      "url": "https://arxiv.org/abs/2402.15985",
-      "summary": "This system can highlight phoneme n-grams, present in the vocabulary, in the dog audio uploaded by users."
+      "releaseDate": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.21011",
+      "summary": "A multimodal dog-fingerprinting framework that combines visual identification, multi-object tracking, and vocal fingerprinting to attribute barks to individual dogs in real-world videos, with a benchmark of 46 videos and 213 annotated bark events."
     },
     {
-      "name": "Phonetic and Lexical Discovery of Canine Vocalization",
-      "publisher": "EMNLP",
-      "releaseDate": "2024-11-01",
-      "url": "https://aclanthology.org/2024.findings-emnlp.816/",
-      "summary": "This paper presents an iterative algorithm inspired by human phonetic discovery, which is based on minimal pairs that determine phonemes by distinguishing different words in human language, and is able to produce a complete alphabet of distinct canine phoneme-like units. In addition, the algorithm produces a number of canine repeated acoustic units, which may correspond to specific environments and activities of a dog, composed exclusively of the canine phoneme-like units in the alphabet. The framework outlined in this paper is expected to function not only on canines but other animal species."
+      "name": "A Preview of Computational Animal Linguistics",
+      "publisher": "ACM Computing Surveys",
+      "releaseDate": "2026-10-06",
+      "url": "https://doi.org/10.1145/3850160",
+      "summary": "A survey of computational animal linguistics: the study of non-human animal vocal communication as a language system using data-driven methods from NLP and large language modeling."
+    },
+    {
+      "name": "Unsupervised Discovery and Analysis of the Vocal Repertoires and Patterns of Select Corvid Species",
+      "publisher": "ICASSP",
+      "releaseDate": "2026-05-03",
+      "url": "https://ieeexplore.ieee.org/document/11462057/",
+      "summary": "Unsupervised discovery and acoustic analysis of the vocal repertoires and call patterns of select corvid species."
+    },
+    {
+      "name": "DogSpeak: A Canine Vocalization Classification Dataset",
+      "publisher": "ACM MM",
+      "releaseDate": "2025-10-27",
+      "url": "https://doi.org/10.1145/3746027.3758298",
+      "summary": "A large-scale in-the-wild dataset of 77,202 bark sequences (33 hours) from 156 dogs of 5 breeds with dog ID, sex, and breed labels, with benchmarks for sex, breed, and individual recognition."
+    },
+    {
+      "name": "EmotionalCanines: A Dataset for Analysis of Arousal and Valence in Dog Vocalization",
+      "publisher": "ACM MM",
+      "releaseDate": "2025-10-27",
+      "url": "https://doi.org/10.1145/3746027.3758286",
+      "summary": "A framework for collecting reliable arousal and valence labels at scale, producing a dataset of 1,400 Husky and Shiba Inu bark sequences labeled for emotional state."
+    },
+    {
+      "name": "A Data-driven Approach to the Longitudinal Study of Canine Vocal Pattern Development",
+      "publisher": "ACM MM",
+      "releaseDate": "2025-10-27",
+      "url": "https://doi.org/10.1145/3746027.3758175",
+      "summary": "The Canine Age Transition Vocalization Dataset of 125 dogs across 6 breeds with verified birthdates, and a longitudinal analysis of how bark types and acoustic units change as dogs mature."
     },
     {
       "name": "Toward Automatic Discovery of a Canine Phonetic Alphabet",
       "publisher": "ACL",
       "releaseDate": "2025-07-24",
       "url": "https://aclanthology.org/2025.acl-long.451/",
-      "summary": "This paper presents an iterative algorithm inspired by human phonetic discovery, which is based on minimal pairs that determine phonemes by distinguishing different words in human language, and is able to produce a complete alphabet of distinct canine phoneme-like units. In addition, the algorithm produces a number of canine repeated acoustic units, which may correspond to specific environments and activities of a dog, composed exclusively of the canine phoneme-like units in the alphabet. The framework outlined in this paper is expected to function not only on canines but other animal species."
+      "summary": "Outstanding Paper Award. An iterative algorithm inspired by human phonetic discovery, based on minimal pairs, that produces a complete alphabet of canine phoneme-like units and recurring acoustic units tied to dogs' environments and activities."
+    },
+    {
+      "name": "Phonetic and Lexical Discovery of Canine Vocalization",
+      "publisher": "EMNLP",
+      "releaseDate": "2024-11-01",
+      "url": "https://aclanthology.org/2024.findings-emnlp.816/",
+      "summary": "A data-driven approach using self-supervised HuBERT to classify canine phones and adaptive grammar induction to identify a preliminary vocabulary, some of whose words show causal relations with dog activities."
+    },
+    {
+      "name": "Phonetic and Lexical Discovery of a Canine Language using HuBERT",
+      "publisher": "Arxiv",
+      "releaseDate": "2024-02-25",
+      "url": "https://arxiv.org/abs/2402.15985",
+      "summary": "A self-supervised HuBERT approach to classify phoneme labels in dog vocalizations and identify a rudimentary vocabulary, with a web-based labeling system that highlights phoneme n-grams in uploaded dog audio."
     }
   ],
   "skills": [
