@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false # al-folio style template, kept for reference but not built
 title: project 5
 description: a project with a background image
 img: assets/img/1.jpg

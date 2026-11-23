@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false # al-folio style template, kept for reference but not built
 title: project 3 with very long name
 description: a project that redirects to another website
 img: assets/img/7.jpg

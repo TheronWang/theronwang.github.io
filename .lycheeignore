@@ -8,3 +8,5 @@
 ^https?://cse\.uta\.edu/
 ^https?://uta\.engineering/
 ^https?://unsplash\.com/
+# This site's own pages are checked after each build by the site link check
+^https?://theronwang\.github\.io/
