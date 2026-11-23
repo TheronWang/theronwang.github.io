@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Sinong Wang",
-    "label": "PhD Candidate",
+    "name": "Theron (Sinong) Wang",
+    "label": "Ph.D. Candidate",
     "image": "",
     "email": "theron.wang@uta.edu",
-    "phone": "(681) 221-7301",
+    "phone": "",
     "url": "https://theronwang.github.io/",
-    "summary": "I am a PhD candidate in Computer Science at the University of Texas at Arlington. My research interests include machine learning, data mining, and natural language processing. I am currently working on the project of unspuervised lexicon discovery.",
+    "summary": "I am a Ph.D. candidate in Computer Science at the University of Texas at Arlington, supervised by Professor Kenny Zhu. My research is on animal language understanding and processing: applying natural language processing and machine learning to discover the phonetic and lexical structure of animal vocalizations.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "TX 76010",
+      "address": "316 ERB, 500 UTA Blvd.",
+      "postalCode": "76010",
       "city": "Arlington",
       "countryCode": "US",
       "region": "Texas"
@@ -18,40 +18,31 @@
       {
         "network": "LinkedIn",
         "username": "Theron Wang",
-        "url": "www.linkedin.com/in/sinongwong"
+        "url": "https://www.linkedin.com/in/sinongwong"
       }
     ]
   },
   "work": [
     {
-      "name": "CSE department, UT Arlington, TX, USA",
-      "position": "Web Developer",
+      "name": "Dept. of Computer Science & Engineering, University of Texas at Arlington, TX, USA",
+      "position": "CSE Web Developer (Graduate Research Assistant)",
       "url": "https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse",
-      "startDate": "2024-07-10",
+      "startDate": "2024-08",
       "endDate": "present",
-      "summary": "Developing the web app service for the CSE department at UTA.",
-      "highlights": ["Developed the web app service for the CSE department at UTA."]
+      "summary": "Graduate Research Assistant with the CSE Web Master Group.",
+      "highlights": [
+        "Maintain an internal app primarily used by CSE faculty, staff, and students.",
+        "Submit CSE website change requests to College of Engineering supervisors."
+      ]
     },
     {
-      "name": "CSE department, UT Arlington, TX, USA",
-      "position": "Teaching Assistant",
+      "name": "Dept. of Computer Science & Engineering, University of Texas at Arlington, TX, USA",
+      "position": "Graduate Teaching Assistant",
       "url": "https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse",
       "startDate": "2023-08-27",
-      "endDate": "2024-07-10",
-      "summary": "Designed and graded assignments and exams for the undergraduate courses.",
-      "highlights": ["CSE 5302 Programming Language Concepts", "CSE 4369 Natural Language Processing", "CSE 6332 Cloud Computing"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "endDate": "2024-05",
+      "summary": "Prepared tutorials; graded assignments, quizzes, and exams; answered student questions.",
+      "highlights": ["Natural Language Processing (CSE 5302/3302)", "Programming Language Concepts (CSE 4392)"]
     }
   ],
   "education": [
@@ -60,56 +51,66 @@
       "location": "Arlington, TX, USA",
       "url": "https://www.uta.edu/",
       "area": "Computer Science",
-      "studyType": "PhD",
+      "studyType": "Ph.D.",
       "startDate": "2023-08-27",
       "endDate": "present",
-      "score": "10",
-      "courses": ["Animal Language Processing"]
+      "score": "4.0/4.0",
+      "courses": ["GPA: 4.0/4.0", "John S. Schuchman Outstanding Doctoral Student"]
     },
     {
       "institution": "University of Texas at Arlington, TX, USA",
       "location": "Arlington, TX, USA",
       "url": "https://www.uta.edu/",
       "area": "Computer Science",
-      "studyType": "Master",
+      "studyType": "M.S.",
       "startDate": "2021-08-27",
       "endDate": "2023-08-27",
-      "score": "10",
-      "courses": ["Machine Learning", "Data Mining"]
+      "score": "4.0/4.0",
+      "courses": ["GPA: 4.0/4.0, Rank: 1/37"]
     },
     {
-      "institution": "Northestern University, Shenyang, China",
+      "institution": "Northeastern University, Shenyang, China",
       "location": "Shenyang, China",
       "url": "https://www.neu.edu.cn/",
       "area": "Software Engineering",
-      "studyType": "Master",
+      "studyType": "M.S.",
       "startDate": "2020-09-01",
       "endDate": "2023-06-26",
-      "score": "10",
-      "courses": ["Software Engineering", "Data Structure"]
+      "score": "3.25/4.0",
+      "courses": ["GPA: 3.25/4.0, Rank: 37/126", "First Class Fellowship (×2); Second Class Fellowship (×1)"]
+    },
+    {
+      "institution": "Donghua University, Shanghai, China",
+      "location": "Shanghai, China",
+      "url": "https://english.dhu.edu.cn/",
+      "area": "Nonwovens Engineering",
+      "studyType": "B.E.",
+      "startDate": "2016",
+      "endDate": "2020",
+      "courses": []
     }
   ],
   "awards": [
     {
-      "title": "First Class Fellowship",
-      "date": "2020-10-01",
-      "awarder": "Northestern University in China",
-      "url": "https://english.neu.edu.cn/",
-      "summary": "Good Good Study, Day Day Up."
+      "title": "ACL 2025 Outstanding Paper Award",
+      "date": "2025-08-01",
+      "awarder": "Association for Computational Linguistics",
+      "url": "https://aclanthology.org/2025.acl-long.451/",
+      "summary": "For “Toward Automatic Discovery of a Canine Phonetic Alphabet”"
     },
     {
       "title": "John S. Schuchman Outstanding Doctoral Student",
       "date": "2025-04-11",
-      "awarder": "UT Arlington",
-      "url": "https://www.linkedin.com/posts/cseuta_academicexcellence-cseproud-futureengineers-activity-7317979762675630084-Grly?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaWtgQBDLdr6jcvxFuInvitk9jncDeZTlQ",
-      "summary": "Outstanding Doctoral Student"
+      "awarder": "University of Texas at Arlington",
+      "url": "https://www.linkedin.com/posts/cseuta_academicexcellence-cseproud-futureengineers-activity-7317979762675630084-Grly",
+      "summary": ""
     },
     {
-      "title": "Outstanding Paper Award",
-      "date": "2025-08-01",
-      "awarder": "Association for Computational Linguistics",
-      "url": "https://aclanthology.org/2025.acl-long.451/",
-      "summary": "Outstanding Paper Award"
+      "title": "First Class Fellowship (×2); Second Class Fellowship (×1)",
+      "date": "2020 – 2023",
+      "awarder": "Northeastern University, China",
+      "url": "https://english.neu.edu.cn/",
+      "summary": ""
     }
   ],
   "certificates": [
@@ -214,15 +215,15 @@
       "icon": "fa-solid fa-laptop-code",
       "keywords": [
         "Statistics and Probability",
-        "Natrual Language Processing",
+        "Natural Language Processing",
         "Machine Learning",
         "Web Development",
-        "Python, Pytorch, Flask, SQL, HTML, CSS, JavaScript"
+        "Python, PyTorch, Flask, JavaScript, HTML, CSS, SQL/MySQL, C/C++"
       ]
     },
     {
       "name": "Cooking",
-      "level": "Chief",
+      "level": "Chef",
       "icon": "fa-solid fa-utensils",
       "keywords": ["Chinese Cuisine", "Baking", "Desserts"]
     }
@@ -235,7 +236,7 @@
     },
     {
       "language": "Mandarin",
-      "fluency": "Naive Speaker",
+      "fluency": "Native",
       "icon": ""
     }
   ],
@@ -265,12 +266,18 @@
   ],
   "projects": [
     {
+      "name": "Home Project Manager (Obsidian plugin)",
+      "summary": "An Obsidian plugin that builds a home dashboard and project pages from plain Markdown notes, with an update format coding agents can write to.",
+      "highlights": ["JavaScript", "Obsidian plugin", "MIT license"],
+      "startDate": "2026-11-23",
+      "url": "https://theronwang.github.io/projects/home_project_manager/"
+    },
+    {
       "name": "A canine language lexicon discovery analysis system",
       "summary": "Developed a system that can automatically discover the lexicon of a canine language.",
       "highlights": ["Natural Language Processing", "Web development"],
-      "startDate": "2023-01-1-20",
-      "endDate": "2023-04-13",
-      "url": "https://202.120.38.146:8079/"
+      "startDate": "2023-01-20",
+      "endDate": "2023-04-13"
     }
   ]
 }
